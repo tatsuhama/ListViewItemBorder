@@ -21,7 +21,7 @@ public class MyAdapter extends ArrayAdapter<Boolean> {
         if (convertView != null) {
             holder = (ViewHolder) convertView.getTag();
         } else {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_with_divider, parent, false);
             holder = new ViewHolder(convertView);
             convertView.setTag(holder);
         }

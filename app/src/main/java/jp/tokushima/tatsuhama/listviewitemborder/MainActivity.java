@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ListView list = (ListView) findViewById(R.id.list_view);
         list.setAdapter(createAdapter());
+        list.setDivider(null);
     }
 
     private MyAdapter createAdapter() {
